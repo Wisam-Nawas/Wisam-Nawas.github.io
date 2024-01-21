@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <!--
 	Massively by HTML5 UP
@@ -33,16 +34,20 @@
 					</header>
 
 				<!-- Nav -->
+				
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
+							<li class="active"><a href="#about">About Me </a></li>
+							<li><a href="#resume">Resume</a></li>
+							<li><a href="#projects"> Projects </a></li>
+      						<li><a href="#footer">Contact</a></li>
+      					
 							
 						</ul>
 						<ul class="icons">
 							 <li><a href="https://www.linkedin.com/in/wisam-nawas-01616123b/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
-							<li><a href="https://github.com/Wisam-Nawas" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 									<li><a href="https://www.instagram.com/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									
+									<li><a href="https://github.com/Wisam-Nawas" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 					</nav>
 
@@ -50,6 +55,7 @@
 					<div id="main">
 
 						<!-- Featured Post -->
+						<section id="about">
 							<article class="post featured">
 								<header class="major">
 									<h2><a href="#">About Me<br />
@@ -62,9 +68,12 @@
 								</header>
 								<a class="image main"><img src="images/pic01.jpg" alt="" /></a>
 							</article>
+						</section>
 
 						<!-- Posts -->
+						<section id="projects">
 							<section class="posts">
+								
 								<article>
 									<header>
 										<h2><a href="https://github.com/Wisam-Nawas/CancerPredictionTool">Cancer Prediction<br />
@@ -74,9 +83,10 @@
 									<p>Our team developed a sophisticated model trained to analyze and predict various types of cancer based on their symptoms. Leveraging Flask, we established a robust web server that provides users with....<br><br>.
                   </p>
 									<ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
+										<li><a href="https://github.com/Wisam-Nawas/CancerPredictionTool" class="button">View Project</a></li>
 									</ul>
 								</article>
+								
 								<article>
 									<header>
 										
@@ -86,7 +96,7 @@
 									<a href="https://drmegtheshrink.com/" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
 									<p><br>Developed and launched a website for a client, strategically designed to encourage users to seek professional assistance. The website serves as a valuable resource, guiding individuals towards seeking professional help, contributing to the growth of the client's business. </p>
 									<ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
+										<li><a href="https://drmegtheshrink.com" class="button">View Project</a></li>
 									</ul>
 								</article>
 								<article>
@@ -100,7 +110,9 @@
 										<li><a href="#" class="button">View Project</a></li>
 									</ul>
 								</article>
-</section>
+								
+							</section>
+						</section>
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -134,7 +146,7 @@
 							
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">nawaswisam@gmail.com</a></p>
+								<p><a href="nawaswisam@gmail.com">nawaswisam@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
@@ -162,6 +174,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				$(document).ready(function () {
+				   // Smooth scrolling for internal links
+				   $('a[href^="#"]').on('click', function (event) {
+					  var target = $(this.getAttribute('href'));
+					  if (target.length) {
+						 event.preventDefault();
+						 $('html, body').stop().animate({
+							scrollTop: target.offset().top
+						 }, 1000);
+					  }
+				   });
+				});
+			 </script>
+			 
 
 	</body>
 </html>
